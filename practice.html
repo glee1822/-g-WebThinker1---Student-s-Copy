@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-SG">
-  <head>
-    <link href="script/bootstrap.css" rel="stylesheet">
-  	<meta charset="utf-8"/>
-    
-    <meta name="viewport" content="width=device-width"/>
-    <link href="/script/practice.css" rel="stylesheet" />
+
+<head>
+  <link href="script/bootstrap.css" rel="stylesheet">
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width" />
+  <link href="/script/practice.css" rel="stylesheet" />
+
+<body>
+  <div class="row border border-dark">
+    <div class="col-6">
+      <form>
+        <label for="contactnumber">Contact</label>
+        <input type="name" class="form-control" id="name" name="firstname">
+      </form>
+
+    </div>
+    <!-- <div class="col-6">
+      <form>
+        <label for="contactnumber">Contact</label>
+        <input type="name" class="form-control" id="contactnumber" name="contact">
+      </form>
+
+    </div> -->
+  </div>
+ 
+     <button type="button" class="btn btn-primary" onclick="validation">enter</button>
+     <div id="contactNumValidation" class=""d-none textdanger>
+      <p> Do not leave empty </p>
+     </div>
+
+    <script>
+      let validate = () => {
+      let num = document.getElementById('name')
+      if (num.value.length != 0){
+        num.classlist="form-control"
+        document.getElementById("contactNumValidation").classlist = "d-none text-danger";
+      } else {
+        num.classlist = "form-control is-invalid";
+        document.getElementById("contactNumValidation").classlist = "text-danger";
+      }
+    }
+
+      
+    </script>
+</body>
 
   
 
-    <table class="border border-dark table table-striped table-bordered table-hover">
-      <thead>
-        <tr>
-          <th>Subject Code </th>
-          <th>Subject Name</th>
-          <th>Grade </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr >
-          <th>1184</th>
-          <th>EL</th>
-          <th>A2</th>
-        </tr>
-        <tr>
-          <th>4052</th>
-          <th>MA</th>
-          <th>A1</th>
-        </tr>
-        <tr>
-          <th>4049</th>
-          <th>AMA</th>
-          <th>A2</th>
-        </tr>
-      </tbody>
-    </table>
-    <button type="button" class="btn btn-danger">Register</button>
-  </body> 
+
+
+  <!--   
+    <script>
+      let a = 9
+      if (a%2==0){
+        console.log("num is even")
+      }
+      if (a%2==1){
+        console.log("num is odd")
+      }      
+      // console.log("hi");
+      // console.warn("hi");
+      // console.("hi");
+    </script>
+     -->
 </html>
