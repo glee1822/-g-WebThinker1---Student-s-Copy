@@ -51,6 +51,7 @@
 		<!-- Key section -->
 		<form class="container py-3">
 			<div class="row gy-3">
+
 				<!-- Label: Name*
 						 Text Input field -->
 
@@ -66,6 +67,60 @@
 			</div>
 			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
 		</form>
+		<div class="row border border-dark mb-4">
+			<div class="col-6 pl-4 pb-3">
+			  <form>
+				<label for="firstname">First Name</label>
+				<input type="text" class="form-control" id="fname" name="firstname" placeholder="First Name">
+			  </form>
+		
+			</div>
+			<div class="col-6 pl-4 pb-3">
+			  <form>
+				<label for="lastname">Last Name</label>
+				<input type="text" class="form-control" id="lname" name="lastname" placeholder="Last Name">
+			  </form>
+			</div>
+			<div class="row pl-4 pb-3">
+			  <form>
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+			  </form>
+			</div>
+
+			<div class="row pl-4 pb-3">
+				<form>
+				  <label for="subject">Subject</label>
+				  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+				</form>
+			</div>
+
+			<div class="row pl-4 pb-3">
+			  <form>
+				<label for="subject">Subject</label>
+				<textarea type="text" class="form-control" id="subject" name="subject"  placeholder="Subject" rows="6" ></textarea>
+				
+			  </form>
+			</div>
+		
+		  </div>
+		 
+			<button type="button" class="btn btn-primary " onclick="validation">enter</button>
+			<div id="contactNumValidation" class=""d-none textdanger>
+			<p> Do not leave empty </p>
+			</div>
+		
+			<script>
+			  let validate = () => {
+			  let num = document.getElementById('name')
+			  if (num.value.length != 0){
+				num.classlist="form-control"
+				document.getElementById("contactNumValidation").classlist = "d-none text-danger";
+			  } else {
+				num.classlist = "form-control is-invalid";
+				document.getElementById("contactNumValidation").classlist = "text-danger";
+			  }
+			}
 	</article>
 	<!-- End of coding region -->
 	<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Computhink Kids SG.</div></footer>
