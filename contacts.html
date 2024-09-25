@@ -1,128 +1,184 @@
 <!DOCTYPE html>
 <html lang="en-SG">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Byte Buster Coding Club</title>
-	<script src="script/jquery.min.js"></script>
-	<script src="script/bootstrap.js"></script>
-	<script src="script/contacts.js"></script>
-	<link href="script/bootstrap.css" rel="stylesheet" />
-	<link href="script/contacts.css" rel="stylesheet" />
-	<link href="img/favicon-bbcc.png" rel="icon" />
-</head>
-<body class="bg-secondary bg-opacity-10" style="min-width:320px">
-	<header>
-		<nav class="navbar navbar-dark navbar-expand-lg bg-primary">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/logo-bbcc.png" alt="logo" class="d-inline-block" style="max-height:3rem">
-					<span class="d-none d-sm-inline-block align-middle">Byte Buster<small class="d-block lh-xs fs-7">Coding Club</small></span>
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse" id="navlinks">
-					<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-						<li class="nav-item"><a class="nav-link" href="memberspotlight.html">Members Spotlight</a></li>
-						<li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-						<li class="nav-item"><a class="nav-link" href="projects.html">Past Projects</a></li>
-						<li class="nav-item"><a class="nav-link active" href="contacts.html">Contact Us</a></li>
-						<li class="nav-item"><a class="nav-link" href="tutorial.html">Tutorial</a></li>
-					</ul>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Byte Buster Coding Club</title>
+		<script src="script/jquery.min.js"></script>
+		<script src="script/bootstrap.js"></script>
+		<script src="script/contacts.js"></script>
+		<link href="script/bootstrap.css" rel="stylesheet" />
+		<link href="script/contacts.css" rel="stylesheet" />
+		<link href="img/favicon-bbcc.png" rel="icon" />
+	</head>
+	<body class="bg-secondary bg-opacity-10" style="min-width:320px">
+		<header>
+			<nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo-bbcc.png" alt="logo" class="d-inline-block" style="max-height:3rem">
+						<span class="d-none d-sm-inline-block align-middle">Byte Buster<small class="d-block lh-xs fs-7">Coding Club</small></span>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="navlinks">
+						<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+							<li class="nav-item"><a class="nav-link" href="memberspotlight.html">Members Spotlight</a></li>
+							<li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+							<li class="nav-item"><a class="nav-link" href="projects.html">Past Projects</a></li>
+							<li class="nav-item"><a class="nav-link active" href="contacts.html">Contact Us</a></li>
+							<li class="nav-item"><a class="nav-link" href="tutorial.html">Tutorial</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Here the main container where students should code -->
+		<article class="min-vh-100">
+			<!-- Banner Region -->
+			<div id="banner"></div>
+			<!-- Page Header -->
+			<div class="container pt-4 py-3">
+				<h1 class="text-center fw-bold display-4">Contact Us</h1>
+				<h2 class="text-center fw-normal">We'd Love to Hear from You</h2>
+			</div>
+			<!-- Leading Text -->
+			<div class="py-3 bg-success bg-opacity-25">
+				<div class="container">
+					<p>Hey there, fellow coder! Got a question? An idea? Just want to say 'Hi'? Drop us a line below. We'll get back to you quicker than a JavaScript loop!</p>
 				</div>
 			</div>
-		</nav>
-	</header>
-	<!-- Here the main container where students should code -->
-	<article class="min-vh-100">
-		<!-- Banner Region -->
-		<div id="banner"></div>
-		<!-- Page Header -->
-		<div class="container pt-4 py-3">
-			<h1 class="text-center fw-bold display-4">Contact Us</h1>
-			<h2 class="text-center fw-normal">We'd Love to Hear from You</h2>
-		</div>
-		<!-- Leading Text -->
-		<div class="py-3 bg-success bg-opacity-25">
-			<div class="container">
-				<p>Hey there, fellow coder! Got a question? An idea? Just want to say 'Hi'? Drop us a line below. We'll get back to you quicker than a JavaScript loop!</p>
-			</div>
-		</div>
-		<!-- Key section -->
-		<form class="container py-3">
-			<div class="row gy-3">
+			<form class="container py-3">
+				<div class="row gy-3">
 
-				<!-- Label: Name*
-						 Text Input field -->
+					<!-- Label: Name*
+							Text Input field -->
 
-				<!-- Label: Email Address*
-				 
-						 Email Input field -->
+					<!-- Label: Email Address*
+					
+							Email Input field -->
 
-				<!-- Label: Subject*
-						 Text Input field with placeholder text "Enquiry on how to code"-->
+					<!-- Label: Subject*
+							Text Input field with placeholder text "Enquiry on how to code"-->
 
-				<!-- Label: Subject*
-						 Textarea field with the row attribute of value 5-->
-			</div>
-			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
-		</form>
-		<div class="row border border-dark mb-4">
-			<div class="col-6 pl-4 pb-3">
-			  <form>
-				<label for="firstname">First Name</label>
-				<input type="text" class="form-control" id="fname" name="firstname" placeholder="First Name">
-			  </form>
-		
-			</div>
-			<div class="col-6 pl-4 pb-3">
-			  <form>
-				<label for="lastname">Last Name</label>
-				<input type="text" class="form-control" id="lname" name="lastname" placeholder="Last Name">
-			  </form>
-			</div>
-			<div class="row pl-4 pb-3">
-			  <form>
-				<label for="email">Email</label>
-				<input type="email" class="form-control" id="email" name="email" placeholder="Email">
-			  </form>
-			</div>
-
-			<div class="row pl-4 pb-3">
+					<!-- Label: Subject*
+							Textarea field with the row attribute of value 5-->
+				</div>
+				<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
+			</form>
+			<div class="row border border-dark mb-4">
+				<div class="col-6 pl-4 pb-3">
 				<form>
-				  <label for="subject">Subject</label>
-				  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+					<label for="firstname">First Name*</label>
+					<input type="text" class="form-control" id="fname" name="firstname" placeholder="First Name">
 				</form>
-			</div>
+			
+				</div>
+				<div class="col-6 pl-4 pb-3">
+				<form>
+					<label for="lastname">Last Name*</label>
+					<input type="text" class="form-control" id="lname" name="lastname" placeholder="Last Name">
+				</form>
+				</div>
+				<div class="row pl-4 pb-3">
+				<form>
+					<label for="email">Email*</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+				</form>
+				</div>
 
-			<div class="row pl-4 pb-3">
-			  <form>
-				<label for="subject">Subject</label>
-				<textarea type="text" class="form-control" id="subject" name="subject"  placeholder="Subject" rows="6" ></textarea>
+				<div class="row pl-4 pb-3">
+					<form>
+					<label for="subject">Subject*</label>
+					<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+					</form>
+				</div>
+
+				<div class="row pl-4 pb-3">
+					<form>
+						<label for="subject">Subject*</label>
+						<textarea type="text" class="form-control" id="subjectabt" name="subject"  placeholder="Subject" rows="5" ></textarea>
+					
+					</form>
+				</div>
+			
+			</div>
+			<div id="contactNumValidation" class="d-none text-danger">
+				<p> *Do not leave empty </p>
+			</div>
+				<button type="button" class="btn btn-primary " onclick="validate()">Send</button>
 				
-			  </form>
+				
 			</div>
-		
-		  </div>
-		 
-			<button type="button" class="btn btn-primary " onclick="validation">enter</button>
-			<div id="contactNumValidation" class=""d-none textdanger>
-			<p> Do not leave empty </p>
-			</div>
-		
+			
 			<script>
-			  let validate = () => {
-			  let num = document.getElementById('name')
-			  if (num.value.length != 0){
-				num.classlist="form-control"
-				document.getElementById("contactNumValidation").classlist = "d-none text-danger";
-			  } else {
-				num.classlist = "form-control is-invalid";
-				document.getElementById("contactNumValidation").classlist = "text-danger";
-			  }
-			}
-	</article>
-	<!-- End of coding region -->
-	<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Computhink Kids SG.</div></footer>
-</body>
+				const validate=()=> {
+				  if (document.getElementById("fname").value.length==0) {
+					document.getElementById("contactNumValidation").classList = "text-danger";
+				  }else {
+					document.getElementById("contactNumValidation").classList = "d-none";
+				  }
+		  
+				  if (document.getElementById("fname").value.length==0) {
+					document.getElementById("fname").classList = "form-control is-invalid";
+				  }else{
+					document.getElementById("fname").classList = "form-control ";
+				  }
+				  
+				  if (document.getElementById("lname").value.length==0) {
+					document.getElementById("contactNumValidation").classList = "text-danger";
+				  }else {
+					document.getElementById("contactNumValidation").classList = "d-none";
+				  }
+		  
+				  if (document.getElementById("lname").value.length==0) {
+					document.getElementById("lname").classList = "form-control is-invalid";
+				  }else{
+					document.getElementById("lname").classList = "form-control ";
+				  }
+
+				  if (document.getElementById("email").value.length==0) {
+					document.getElementById("contactNumValidation").classList = "text-danger";
+				  }else {
+					document.getElementById("contactNumValidation").classList = "d-none";
+				  }
+		  
+				  if (document.getElementById("email").value.length==0) {
+					document.getElementById("email").classList = "form-control is-invalid";
+				  }else{
+					document.getElementById("email").classList = "form-control ";
+				  }
+
+				  if (document.getElementById("subject").value.length==0) {
+					document.getElementById("contactNumValidation").classList = "text-danger";
+				  }else {
+					document.getElementById("contactNumValidation").classList = "d-none";
+				  }
+		  
+				  if (document.getElementById("subject").value.length==0) {
+					document.getElementById("subject").classList = "form-control is-invalid";
+				  }else{
+					document.getElementById("subject").classList = "form-control ";
+				  }
+
+				  if (document.getElementById("subjectabt").value.length==0) {
+					document.getElementById("contactNumValidation").classList = "text-danger";
+				  }else {
+					document.getElementById("contactNumValidation").classList = "d-none";
+				  }
+		  
+				  if (document.getElementById("subjectabt").value.length==0) {
+					document.getElementById("subjectabt").classList = "form-control is-invalid";
+				  }else{
+					document.getElementById("subjectabt").classList = "form-control ";
+				  }
+				}
+			  </script>
+
+
+
+		</article>
+		
+		<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Computhink Kids SG.</div></footer>
+	</body>
 </html>

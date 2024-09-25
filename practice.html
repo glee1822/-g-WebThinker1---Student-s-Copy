@@ -32,32 +32,35 @@
 
     <div class="row pl-4 pb-3">
       <form>
-        <label for="stuff">Stuff</label>
-        <textarea type="text" class="form-control" id="stuff" name="stuff"  placeholder="Stuff" rows="6" ></textarea>
+        <label for="number">Number</label>
+        <input type="number" class="form-control " id="number" name="number"  placeholder="number"  >
         
       </form>
     </div>
 
   </div>
  
-    <button type="button" class="btn btn-primary " onclick="validation">enter</button>
-    <div id="contactNumValidation" class=""d-none textdanger>
-    <p> Do not leave empty </p>
+    <button type="button" class="btn btn-primary " onclick="validate()">enter</button>
+    <div id="contactNumValidation" class="d-none textdanger">
+      <p class="text-danger"> Do not leave empty </p>
     </div>
 
     <script>
-      let validate = () => {
-      let num = document.getElementById('name')
-      if (num.value.length != 0){
-        num.classlist="form-control"
-        document.getElementById("contactNumValidation").classlist = "d-none text-danger";
-      } else {
-        num.classlist = "form-control is-invalid";
-        document.getElementById("contactNumValidation").classlist = "text-danger";
-      }
-    }
+      const validate=()=> {
+        if (document.getElementById("number").value.length==0) {
+          document.getElementById("contactNumValidation").classList = "";
+        }else{
+          document.getElementById("contactNumValidation").classList = "d-none";
+        }
 
-      
+        if (document.getElementById("number").value.length==0) {
+          document.getElementById("number").classList = "form-control is-invalid";
+        }else{
+          document.getElementById("number").classList = "form-control ";
+        }
+
+
+      }
     </script>
     
 </body>
@@ -81,20 +84,4 @@
         console.log("num is odd")
       } 
 </script>
-
-
-  <!--   
-    <script>
-      let a = 9
-      if (a%2==0){
-        console.log("num is even")
-      }
-      if (a%2==1){
-        console.log("num is odd")
-      }      
-      // console.log("hi");
-      // console.warn("hi");
-      // console.("hi");
-    </script>
-     -->
 </html>
