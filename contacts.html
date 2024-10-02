@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-SG">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width"/>
 		<title>Byte Buster Coding Club</title>
 		<script src="script/jquery.min.js"></script>
 		<script src="script/bootstrap.js"></script>
@@ -43,44 +43,22 @@
 				<h2 class="text-center fw-normal">We'd Love to Hear from You</h2>
 			</div>
 			<!-- Leading Text -->
-			<div class="py-3 bg-success bg-opacity-25">
-				<div class="container">
+			<div class="py-3 bg-success bg-opacity-25 ">
+				<div class="container ">
 					<p>Hey there, fellow coder! Got a question? An idea? Just want to say 'Hi'? Drop us a line below. We'll get back to you quicker than a JavaScript loop!</p>
 				</div>
 			</div>
-			<form class="container py-3">
-				<div class="row gy-3">
 
-					<!-- Label: Name*
-							Text Input field -->
-
-					<!-- Label: Email Address*
-					
-							Email Input field -->
-
-					<!-- Label: Subject*
-							Text Input field with placeholder text "Enquiry on how to code"-->
-
-					<!-- Label: Subject*
-							Textarea field with the row attribute of value 5-->
-				</div>
-				<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
-			</form>
-			<div class="row border border-dark mb-4">
-				<div class="col-6 pl-4 pb-3">
+			<div class="row border mt-6 mb-4 ">
+				<div class="col-12 pl-4 pr-5 pb-3">
 				<form>
-					<label for="firstname">First Name*</label>
-					<input type="text" class="form-control" id="fname" name="firstname" placeholder="First Name">
+					<label for="firstname">Name*</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Name">
 				</form>
 			
 				</div>
-				<div class="col-6 pl-4 pb-3">
-				<form>
-					<label for="lastname">Last Name*</label>
-					<input type="text" class="form-control" id="lname" name="lastname" placeholder="Last Name">
-				</form>
-				</div>
-				<div class="row pl-4 pb-3">
+
+				<div class="row pl-4 pb-3 ">
 				<form>
 					<label for="email">Email*</label>
 					<input type="email" class="form-control" id="email" name="email" placeholder="Email">
@@ -103,75 +81,82 @@
 				</div>
 			
 			</div>
-			<div id="contactNumValidation" class="d-none text-danger">
+
+			<div id="validation" class="d-none text-danger">
 				<p> *Do not leave empty </p>
 			</div>
-				<button type="button" class="btn btn-primary " onclick="validate()">Send</button>
-				
-				
+			<div id="notEnoughLetters" class="d-none text-danger">
+				<p> *Need at least 10 characters </p>
+			</div>
+			<div>
+				<button type="button" class="btn btn-primary mb-4" onclick="validate()">Send</button>
 			</div>
 			
 			<script>
-				const validate=()=> {
-				  if (document.getElementById("fname").value.length==0) {
-					document.getElementById("contactNumValidation").classList = "text-danger";
-				  }else {
-					document.getElementById("contactNumValidation").classList = "d-none";
-				  }
-		  
-				  if (document.getElementById("fname").value.length==0) {
-					document.getElementById("fname").classList = "form-control is-invalid";
-				  }else{
-					document.getElementById("fname").classList = "form-control ";
-				  }
-				  
-				  if (document.getElementById("lname").value.length==0) {
-					document.getElementById("contactNumValidation").classList = "text-danger";
-				  }else {
-					document.getElementById("contactNumValidation").classList = "d-none";
-				  }
-		  
-				  if (document.getElementById("lname").value.length==0) {
-					document.getElementById("lname").classList = "form-control is-invalid";
-				  }else{
-					document.getElementById("lname").classList = "form-control ";
-				  }
+				const validate = () => {
+					if (document.getElementById("name").value.length==0) {
+						document.getElementById("validation").classList = "text-danger";
+					}else {
+						document.getElementById("validation").classList = "d-none";
+					}
+			
+					if (document.getElementById("name").value.length==0) {
+						document.getElementById("name").classList = "form-control is-invalid";
+					}else{
+						document.getElementById("name").classList = "form-control ";
+					}				  
+		
+					if (document.getElementById("email").value.length==0) {
+						document.getElementById("validation").classList = "text-danger";
+					}else {
+						document.getElementById("validation").classList = "d-none";
+					}
+			
+					if (document.getElementById("email").value.length==0) {
+						document.getElementById("email").classList = "form-control is-invalid";
+					}else{
+						document.getElementById("email").classList = "form-control ";
+					}
 
-				  if (document.getElementById("email").value.length==0) {
-					document.getElementById("contactNumValidation").classList = "text-danger";
-				  }else {
-					document.getElementById("contactNumValidation").classList = "d-none";
-				  }
-		  
-				  if (document.getElementById("email").value.length==0) {
-					document.getElementById("email").classList = "form-control is-invalid";
-				  }else{
-					document.getElementById("email").classList = "form-control ";
-				  }
+					if (document.getElementById("subject").value.length==0) {
+						document.getElementById("validation").classList = "text-danger";
+					}else {
+						document.getElementById("validation").classList = "d-none";
+					}
+			
+					if (document.getElementById("subject").value.length==0) {
+						document.getElementById("subject").classList = "form-control is-invalid";
+					}else{
+						document.getElementById("subject").classList = "form-control ";
+					}
 
-				  if (document.getElementById("subject").value.length==0) {
-					document.getElementById("contactNumValidation").classList = "text-danger";
-				  }else {
-					document.getElementById("contactNumValidation").classList = "d-none";
-				  }
-		  
-				  if (document.getElementById("subject").value.length==0) {
-					document.getElementById("subject").classList = "form-control is-invalid";
-				  }else{
-					document.getElementById("subject").classList = "form-control ";
-				  }
+					if (document.getElementById("subjectabt").value.length==0) {
+						document.getElementById("validation").classList = "text-danger";
+					}else {
+						document.getElementById("validation").classList = "d-none";
+					}
 
-				  if (document.getElementById("subjectabt").value.length==0) {
-					document.getElementById("contactNumValidation").classList = "text-danger";
-				  }else {
-					document.getElementById("contactNumValidation").classList = "d-none";
-				  }
-		  
-				  if (document.getElementById("subjectabt").value.length==0) {
-					document.getElementById("subjectabt").classList = "form-control is-invalid";
-				  }else{
-					document.getElementById("subjectabt").classList = "form-control ";
-				  }
+					if (document.getElementById("subjectabt").value.length==0) {
+						document.getElementById("subjectabt").classList = "form-control is-invalid";
+					}else{
+						document.getElementById("subjectabt").classList = "form-control ";
+					}
+
+					if (document.getElementById("subjectabt").value.length < 10) {
+						document.getElementById("notEnoughLetters").classList = "text-danger";
+
+				    }else{
+						document.getElementById("notEnoughLetters").classList = "d-none";
+					}
+
+					console.log(document.getElementById("validation").classList.includes("d-none"));
+				  	// if (document.getElementById("validation").classList.includes("d-none")) {
+					// 	window.location.reload();
+					// }else{
+					// 	document.getElementById("validation").classList == "text-danger";
+					// }
+
+					// if (document.querySelectorAll('is-invalid').length === 0) window.location.reload();
 				}
 			  </script>
 
@@ -179,6 +164,6 @@
 
 		</article>
 		
-		<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Computhink Kids SG.</div></footer>
+		<footer class="bg-dark text-light"><div class="container py-2 pb-4">qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm</div></footer>
 	</body>
 </html>
