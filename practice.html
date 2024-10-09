@@ -8,80 +8,24 @@
   <meta name="viewport" content="width=device-width" />
   <link href="/script/practice.css" rel="stylesheet" />
 
+  <script src="script/bootstrap.js"></script>
+
+</head>
+
+
 <body>
-  <div class="row border border-dark mb-4">
-    <div class="col-6 pl-4 pb-3">
-      <form>
-        <label for="firstname">First Name</label>
-        <input type="text" class="form-control" id="fname" name="firstname" placeholder="First Name">
-      </form>
-
-    </div>
-    <div class="col-6 pl-4 pb-3">
-      <form>
-        <label for="lastname">Last Name</label>
-        <input type="text" class="form-control" id="lname" name="lastname" placeholder="Last Name">
-      </form>
-    </div>
-    <div class="row pl-4 pb-3">
-      <form>
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-      </form>
-    </div>
-
-    <div class="row pl-4 pb-3">
-      <form>
-        <label for="number">Number</label>
-        <input type="number" class="form-control " id="number" name="number"  placeholder="number"  >
-        
-      </form>
-    </div>
-
-  </div>
- 
-    <button type="button" class="btn btn-primary " onclick="validate()">enter</button>
-    <div id="contactNumValidation" class="d-none textdanger">
-      <p class="text-danger"> Do not leave empty </p>
-    </div>
-
-    <script>
-      const validate=()=> {
-        if (document.getElementById("number").value.length==0) {
-          document.getElementById("contactNumValidation").classList = "";
-        }else{
-          document.getElementById("contactNumValidation").classList = "d-none";
-        }
-
-        if (document.getElementById("number").value.length==0) {
-          document.getElementById("number").classList = "form-control is-invalid";
-        }else{
-          document.getElementById("number").classList = "form-control ";
-        }
 
 
-      }
-    </script>
-    
+  <ul class="nav nav-pills">
+    <li class="nav-item bg-primary">
+      <button class="nav-link text-light rounded-pill active" data-bs-toggle="pill" data-bs-target="#scratch">hi</button>
+    </li>
+    <li class="nav-item bg-primary">
+      <button class="nav-link text-light rounded-pill " data-bs-toggle="pill" data-bs-target="#python">hi</button>
+    </li>
+  </ul>
+
+
 </body>
-
-  
-<script>
-
-  let a = -5
-      if(a>0){
-        console.log("positive num")
-      } else if(a<0){
-        console.log("negative num")
-      }else if(a=0){
-        console.log("num is zero")
-      }
-      let b = 9
-      if (b%2==0){
-        console.log("num is even")
-      }
-      if (b%2==1){
-        console.log("num is odd")
-      } 
 </script>
 </html>

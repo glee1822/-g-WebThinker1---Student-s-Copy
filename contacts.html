@@ -6,7 +6,7 @@
 		<title>Byte Buster Coding Club</title>
 		<script src="script/jquery.min.js"></script>
 		<script src="script/bootstrap.js"></script>
-		<script src="script/contacts.js"></script>
+
 		<link href="script/bootstrap.css" rel="stylesheet" />
 		<link href="script/contacts.css" rel="stylesheet" />
 		<link href="img/favicon-bbcc.png" rel="icon" />
@@ -89,7 +89,7 @@
 				<p> *Need at least 10 characters </p>
 			</div>
 			<div>
-				<button type="button" class="btn btn-primary mb-4" onclick="validate()">Send</button>
+				<button type="button" class="btn btn-primary mb-4" onclick="validate()" id="btn">Send</button>
 			</div>
 			
 			<script>
@@ -150,10 +150,11 @@
 					}
 
 					console.log(document.getElementById("validation").classList.includes("d-none"));
+
 				  	// if (document.getElementById("validation").classList.includes("d-none")) {
-					// 	window.location.reload();
+					// 	document.getElementById("btn").removeAttribute("type")
 					// }else{
-					// 	document.getElementById("validation").classList == "text-danger";
+					//  	document.getElementById("validation").classList == "text-danger";
 					// }
 
 					// if (document.querySelectorAll('is-invalid').length === 0) window.location.reload();

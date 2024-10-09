@@ -49,23 +49,36 @@
 		</div>
 		<!-- Key section -->
 		<div class="container py-3 pb-4">
-			<!-- Create An Unordered List with 2 List Items -->
-			<ul></ul>
+			<ul class="nav nav-pills">
+				<li class="nav-item ">
+				  <button class="nav-link rounded-pill active" data-bs-toggle="pill" data-bs-target="#scratch">Scratch</button>
+				</li>
+
+				<li class="nav-item ">
+				  <button class="nav-link rounded-pill " data-bs-toggle="pill" data-bs-target="#html">HTML canvas</button>
+				</li>
+			</ul>
+
 			<div class="tab-content">
-				<!-- Create two tabs for Project Showcase
-	-  The first tab should have
-				- One header of "Monke & Banana" with the following source: https://scratch.mit.edu/projects/808392264/embed (Width 485 & Height 402)
-				- Another header of "Platformer Game" with the following source: https://scratch.mit.edu/projects/779856092/embed (Width 485 & Height 402)
-
-	-  The second tab should have
-				- A Canvas with a black border of size: Width 800 & Height 600 with an ID of "canvasBoard"
-				- 2 radio buttons:
-						- One of them should be named "Pause Animation" with an ID of "canvasPause" with a red looking appearance.
-						- Another one should be named "Play Animation"  with an ID of "canvasPlay" with a green looking appearance.  -->
-
+				<div class="tab-pane fade show active" id="scratch">
+					<h3> Da monke, da cat and da bananana</h3>
+					<iframe src="https://scratch.mit.edu/projects/808392264/embed" title="scratch project" width="485" height="402"></iframe>
+					<br>
+					<h3> BoingBoing game</h3>
+					<iframe src="https://scratch.mit.edu/projects/779856092/embed" title="scratch project 2" width="485" height="402"></iframe>
+					<br>
+					<h3>Snakey game</h3>
+					<iframe src="https://scratch.mit.edu/projects/880940453/embed" title="scratch project 3" width="485" height="402"></iframe>
+				</div>
+					
+				<div class="tab-pane fade  " id="html">
+				</div>
 			</div>
 		</div>
 	</article>
+	<!-- - One of them should be named "Pause Animation" with an ID of "canvasPause" with a red looking appearance.
+	- Another one should be named "Play Animation"  with an ID of "canvasPlay" with a green looking appearance.   -->
+
 	<!-- End of coding region -->
 	<footer class="bg-dark text-light">
 		<div class="container py-2 pb-4">Done by Computhink Kids SG.</div>
